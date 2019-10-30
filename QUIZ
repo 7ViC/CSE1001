@@ -1,0 +1,107 @@
+import java.util.*;
+public class Main
+{
+  public static void main (String[] args)
+  {
+    Scanner in = new Scanner (System.in);
+      System.out.println ("Welcome to the Quiz");
+      System.out.println ("1.Start");
+      System.out.println ("2.End");
+    int n;
+      n = in.nextInt ();
+    switch (n)
+      {
+      case 1:
+	System.out.println ("let's Start");
+	System.out.println ("1.what is a bit?");
+	System.out.println("a.The smallest unit of information in a computer, with a value of either 0 or 1");
+	System.out.println("b.small piece, part, or quantity of something");
+	char A;
+	  A = in.next ().charAt (0);
+	int S = 0;
+	if (A == 'a')
+	  {
+	    S++;
+	  }
+	else if (A != 'a')
+	  {
+	    System.out.println("Your choice is not wise");
+	  }
+	System.out.println ("2.what is byte?");
+	System.out.println ("a.A sequence of eighteen bits. The programming language provides a corresponding byte type");
+	System.out.println("b.A sequence of eight bits. The programming language provides a corresponding byte type.");
+	char B;
+	B = in.next ().charAt (0);
+	if (B == 'b')
+	  {
+	    S++;
+	  }
+	else if (B != 'b')
+	  {
+	    System.out.println("Your choice is not wise");
+	  }
+	System.out.println ("3.what is casting?");
+	System.out.println("a.an object made by pouring molten metal or other material into a mould");
+	System.out.println ("b.Explicit conversion from one data type to another");
+	char C;
+	C = in.next ().charAt (0);
+	if (C == 'b')
+	  {
+	    S++;
+	  }
+	else if (C != 'b')
+	  {
+	    System.out.println("Your choice is not wise");
+	  }
+	System.out.println("4.what is class?");
+	System.out.println("a.the cluster of codes that makes the sense regards the code.");
+	System.out.println("b.In the programming language, a type that defines the implementation of a particular kind of object. A class definition defines instance and class variables and methods.");
+	char D;
+	D = in.next ().charAt (0);
+	if (D == 'b')
+	  {
+	    S++;
+	  }
+	else if (D != 'b')
+	  {
+	    System.out.println("Your choice is not wise");
+	  }
+	System.out.println ("5.what is comment?");
+	System.out.println
+	  ("a.In programs written in the programming language, comments are delimited using // or /*...*/.  ");
+	System.out.println
+	  ("b.A verbal or written remark expressing an opinion or reaction, that plays an important  role in the code.");
+	char E;
+	E= in.next().charAt (0);
+	if (E == 'a')
+	  {
+	    S++;
+	  }
+	else if (E != 'a')
+	  {
+	    System.out.println("Your choice is not wise");
+	  }
+	System.out.println ("6.abbreviation of JDK?");
+	System.out.println ("a.Java Development Kit");
+	System.out.println ("b.Java Debug Killer");
+	char F;
+	F = in.next ().charAt (0);
+	if (F == 'a')
+	  {
+	    S++;
+	  }
+	else if (F != 'a')
+	  {
+	    System.out.println("Your choice is not wise");
+	  }
+	System.out.println ("Your Score is : "+S);
+
+
+
+	break;
+      case 2:
+	System.out.println ("Bye Have a great day");
+	break;
+      }
+  }
+}
